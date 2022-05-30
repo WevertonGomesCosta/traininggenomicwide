@@ -1,0 +1,26 @@
+---
+title: "This repository was created to assist my learning experience with GitHub and workflowr."
+
+"My first R code at this project will be at this [git hub page](PCA.html)"
+site: workflowr::wflow_site
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Welcome to my research website.
+```{r}
+library(workflowr)
+wflow_open("analysis/PCA.Rmd")
+```
+
+```{r}
+wflow_status()
+```
+
+```{r}
+wflow_publish(files = "analysis/*.Rmd", message = "Test")
+```
+
